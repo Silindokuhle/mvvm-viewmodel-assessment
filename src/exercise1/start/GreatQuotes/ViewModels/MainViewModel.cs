@@ -16,6 +16,7 @@ namespace GreatQuotes.ViewModels
                 QuoteManager.Load()
                             .Select(q => new QuoteViewModel(q)));
         }
+        QuoteViewModel selectedQuote;
         public QuoteViewModel SelectedQuote
         {
             get
